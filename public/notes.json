@@ -9,5 +9,13 @@
     ],
     "createdAt": "2025-12-05T09:58:42.647Z",
     "updatedAt": "2025-12-05T09:58:42.647Z"
+  },
+  {
+    "id": "m9rgeha3homisrl8g3",
+    "title": "全世界中のみんなが見えるようにした",
+    "content": "いま出来ていること（時系列サマリ）\n\nNext.js（TypeScript）でノートアプリ作成\ncreate-next-app → 開発サーバ起動（npm run dev）→ 画面でノート作成・検索・タグ・エクスポート動作を確認。\n\nGit 初期化 & 1st コミット\ngit init -b main → .gitignore 設置 → git add . && git commit。\n\nGitHub への SSH 接続を準備\nssh-keygen → ssh-agent 登録 → 公開鍵を GitHub に追加 → ssh -T git@github.com で認証OKを確認。\n\nGitHub リポジトリへ push\ngit remote add origin git@github.com:... → git push -u origin main 成功。\n\n公開用データ public/notes.json を用意（←これが“誰でも閲覧”の実体データ）\nエクスポートJSONを public/notes.json へ配置して push（= 本番でも /notes.json で参照可能）。\n\n公開運用の基本フロー\nローカルで編集（コード or ノート→エクスポート）\npublic/notes.json を差し替え\ngit add . && git commit && git push\nVercelが自動デプロイ → 本番サイトに即反映",
+    "tags": [],
+    "createdAt": "2025-12-05T11:11:25.443Z",
+    "updatedAt": "2025-12-05T11:11:25.444Z"
   }
 ]
